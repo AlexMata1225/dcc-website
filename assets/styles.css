@@ -371,7 +371,7 @@ ul { list-style: none; }
 .stats { background: var(--ink); color: var(--paper); }
 .stats__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .stats__cell {
   padding: 2.6rem 1.5rem;
@@ -942,7 +942,7 @@ ul { list-style: none; }
   .schedule__grid { grid-template-columns: 1fr; gap: 3rem; }
   .schedule__intro, .res-intro { position: static; }
   .stats__grid { grid-template-columns: repeat(2, 1fr); }
-  .stats__cell:nth-child(3) { border-left: none; }
+  .stats__cell:nth-child(3) { border-left: none; grid-column: 1 / -1; }
   .stats__cell { border-top: 1px solid var(--line-dark); }
   .stats__cell:nth-child(-n+2) { border-top: none; }
   .res-grid { grid-template-columns: 1fr; gap: 2.5rem; }
