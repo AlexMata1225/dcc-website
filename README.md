@@ -31,4 +31,4 @@ Plain HTML/CSS with a small vanilla JS file — no frameworks, no build step.
 
 ## Contact
 
-wakeforestmcc@gmail.com · Instagram [@wfumcc](https://www.instagram.com/wfumcc/)
+wakeforestdcc@gmail.com · Instagram [@wfudcc](https://www.instagram.com/wfudcc/)

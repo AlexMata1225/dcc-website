@@ -36,6 +36,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
+        <a href="#analysts">Analysts</a>
         <a href="#schedule">Schedule</a>
         <a href="#board">Board</a>
         <a href="resources.html">Resources</a>
@@ -51,10 +52,10 @@
       <div class="container">
         <div class="hero__grid">
           <div>
-            <p class="hero__announce">
+            <a class="hero__announce" href="#schedule">
               <span class="hero__announce-dot" aria-hidden="true"></span>
-              First meeting · Sept 9 · 5:00 PM · Farrell Hall
-            </p>
+              <span data-next-announce>Next meeting · Tue, Oct 6 · 5:00 PM · Farrell Hall A27</span>
+            </a>
             <p class="hero__kicker">Wake Forest University · Winston-Salem, NC</p>
             <h1>Where Deacs learn to <em>think like consultants.</em></h1>
             <p class="hero__lede">
@@ -166,7 +167,7 @@
           </div>
           <div class="reveal">
             <div class="frame">
-              <img src="https://wfumcc.org/wp-content/uploads/2024/05/divinity-colleges-1536x624-1.jpg" alt="Wake Forest University campus" loading="lazy" />
+              <img src="assets/campus.jpg" alt="Wake Forest University campus" loading="lazy" />
               <div class="frame__badge">
                 <strong>Top 25</strong>
                 <span>Business school</span>
@@ -326,71 +327,188 @@
       </div>
     </section>
 
+    <!-- ─── Analyst Program ─────────────────────────────────────── -->
+    <section id="analysts" class="section section--cream">
+      <div class="container">
+        <div class="analyst__grid">
+          <div class="reveal">
+            <div class="kicker">
+              <span class="kicker__no">04</span>
+              <span class="kicker__rule"></span>
+              <span class="kicker__label">Analyst Program</span>
+            </div>
+            <h2 class="headline">Develop. Experience. <em>Stand out.</em></h2>
+            <p class="lede">
+              The DCC Analyst Program is the club&rsquo;s selective tier of membership:
+              hands-on client work, rigorous interview preparation, and direct access to
+              practicing consultants. Analysts remain full members of the club.
+            </p>
+            <div class="pillars">
+              <div class="pillar">
+                <span class="pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </span>
+                <div class="pillar__text">
+                  <strong>Exclusive pro-bono engagements</strong>
+                  <span>Analysts are staffed on client teams doing real consulting work, closing with a final presentation to the client.</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+                </span>
+                <div class="pillar__text">
+                  <strong>Comprehensive interview prep</strong>
+                  <span>Case and fit workshops, mock interviews, and personalized feedback from consultants and alumni.</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                </span>
+                <div class="pillar__text">
+                  <strong>In-person office treks</strong>
+                  <span>Go behind the scenes at top consulting firms. EY in Charlotte is first up this fall, with more to come.</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>
+                </span>
+                <div class="pillar__text">
+                  <strong>Direct access to consultants</strong>
+                  <span>Analyst-only networking events and introductions to Wake alumni and firm contacts.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="analyst-card reveal" aria-label="Analyst Program at a glance">
+            <p class="analyst-card__tag">Fall 2026 · First cohort</p>
+            <div class="analyst-card__stats">
+              <div><strong>70+</strong><span>Applicants</span></div>
+              <div><strong>14</strong><span>Analysts</span></div>
+              <div><strong>3</strong><span>Client teams</span></div>
+            </div>
+            <h3>How to join</h3>
+            <ol class="analyst-steps">
+              <li>
+                <span class="analyst-steps__no">01</span>
+                <div><strong>Apply</strong> A short application and video response. Open to all undergraduates, no prior experience required.</div>
+              </li>
+              <li>
+                <span class="analyst-steps__no">02</span>
+                <div><strong>Interview</strong> A conversation with members of the executive board.</div>
+              </li>
+              <li>
+                <span class="analyst-steps__no">03</span>
+                <div><strong>Get staffed</strong> Join a pro-bono client team and the analyst calendar of workshops, mocks, and treks.</div>
+              </li>
+            </ol>
+            <p class="analyst-card__note">
+              Applications for the fall 2026 cohort are closed. The next cycle will be
+              announced at general meetings and on Instagram.
+            </p>
+            <a href="https://www.instagram.com/wfudcc/" target="_blank" rel="noopener noreferrer" class="btn btn--paper">Follow @wfudcc
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <!-- ─── Schedule ────────────────────────────────────────────── -->
     <section id="schedule" class="section section--ink">
       <div class="container">
         <div class="schedule__grid">
           <div class="schedule__intro reveal">
             <div class="kicker">
-              <span class="kicker__no">04</span>
+              <span class="kicker__no">05</span>
               <span class="kicker__rule"></span>
               <span class="kicker__label">Schedule</span>
             </div>
             <h2 class="headline">The arc of a <em>semester.</em></h2>
             <p class="lede">
-              Weekly meetings build from industry fundamentals to live case practice, so a
-              first-year with zero exposure can finish the semester interview-ready.
+              General meetings run Tuesdays at 5:00 PM in Farrell Hall A27, building from
+              networking and behavioral prep to live case practice, so a first-year with
+              zero exposure can finish the semester interview-ready.
             </p>
-            <div class="meeting-card">
+            <!-- The next-meeting card and the hero banner are filled from the first
+                 .timeline__row whose data-date hasn't passed (assets/site.js). -->
+            <div class="meeting-card" data-next-card>
               <p class="meeting-card__tag">Next up</p>
-              <h3>First meeting of the fall</h3>
-              <p>September 9 · 5:00 PM · Farrell Hall</p>
+              <h3 data-next-title>Case interview walkthrough</h3>
+              <p data-next-when>Tuesday, October 6 · 5:00 PM · Farrell Hall A27</p>
               <a href="#join" class="btn btn--paper">Save your seat
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
             </div>
           </div>
+          <!-- Fall 2026 general meetings. To change the schedule, edit these rows:
+               data-date (YYYY-MM-DD) drives the "Next up" card, the hero banner and
+               which rows are greyed out as past. -->
           <div class="timeline reveal">
-            <div class="timeline__row">
+            <div class="timeline__row is-past" data-date="2026-09-08">
               <span class="timeline__no">01</span>
               <div>
-                <h3>Intro to the consulting industry</h3>
-                <p>What consultants actually do, the firm landscape, and the recruiting timeline ahead.</p>
+                <p class="timeline__date">Sept 8</p>
+                <h3>DCC intro meeting</h3>
+                <p>Meet the board and hear the plan for the year.</p>
               </div>
             </div>
-            <div class="timeline__row">
+            <div class="timeline__row is-past" data-date="2026-09-15">
               <span class="timeline__no">02</span>
               <div>
-                <h3>Networking in consulting</h3>
-                <p>Building genuine connections — with support from the OPCD Market Readiness team.</p>
+                <p class="timeline__date">Sept 15</p>
+                <h3>Networking 101</h3>
+                <p>Why networking matters in consulting and how to run a coffee chat, with a Wake alum consulting at Accenture.</p>
               </div>
             </div>
-            <div class="timeline__row">
+            <div class="timeline__row is-past" data-date="2026-09-29">
               <span class="timeline__no">03</span>
               <div>
-                <h3>Intro to case interviews</h3>
-                <p>The structure of a case, how you&rsquo;re evaluated, and how to practice well.</p>
+                <p class="timeline__date">Sept 29</p>
+                <h3>Behavioral interview prep</h3>
+                <p>Strategic storytelling: connecting what you&rsquo;ve done to what you&rsquo;ll bring, with the Office of Leadership.</p>
               </div>
             </div>
-            <div class="timeline__row">
+            <div class="timeline__row is-next" data-date="2026-10-06">
               <span class="timeline__no">04</span>
               <div>
-                <h3>Market sizing</h3>
-                <p>Frameworks and mental math for the most common interview opener.</p>
+                <p class="timeline__date">Oct 6</p>
+                <h3>Case interview walkthrough</h3>
+                <p>An introduction to case interviews: how a case runs from the prompt to the final recommendation.</p>
               </div>
             </div>
-            <div class="timeline__row">
+            <div class="timeline__row" data-date="2026-10-20">
               <span class="timeline__no">05</span>
               <div>
-                <h3>Profitability cases</h3>
-                <p>Diagnosing revenue and cost drivers — the backbone of casing.</p>
+                <p class="timeline__date">Oct 20</p>
+                <h3>Case workshop 1: Structures &amp; frameworks</h3>
+                <p>Building custom, MECE frameworks instead of memorized templates.</p>
               </div>
             </div>
-            <div class="timeline__row">
+            <div class="timeline__row" data-date="2026-11-03">
               <span class="timeline__no">06</span>
               <div>
-                <h3>Practice case interview sessions</h3>
-                <p>Live reps with partners and peers, with feedback after every case.</p>
+                <p class="timeline__date">Nov 3</p>
+                <h3>Case workshop 2: Math &amp; exhibits</h3>
+                <p>Case math drills and pulling the &ldquo;so what&rdquo; out of charts and tables.</p>
+              </div>
+            </div>
+            <div class="timeline__row" data-date="2026-11-17">
+              <span class="timeline__no">07</span>
+              <div>
+                <p class="timeline__date">Nov 17</p>
+                <h3>Alumni panel</h3>
+                <p>Wake alumni in consulting on recruiting, firm culture, and what they wish they&rsquo;d known.</p>
+              </div>
+            </div>
+            <div class="timeline__row" data-date="2026-12-01">
+              <span class="timeline__no">08</span>
+              <div>
+                <p class="timeline__date">Dec 1</p>
+                <h3>Pro-bono final presentations</h3>
+                <p>Our pro-bono teams present their recommendations to close out the semester.</p>
               </div>
             </div>
           </div>
@@ -403,7 +521,7 @@
       <div class="container">
         <div class="reveal" style="text-align: center;">
           <div class="kicker" style="justify-content: center;">
-            <span class="kicker__no">05</span>
+            <span class="kicker__no">06</span>
             <span class="kicker__rule"></span>
             <span class="kicker__label">Executive board</span>
           </div>
@@ -432,31 +550,36 @@
           <div class="board-card reveal">
             <div class="board-card__avatar" aria-hidden="true">AH</div>
             <h3>Alex Helmrich</h3>
-            <p class="board-card__role">Executive Board</p>
+            <p class="board-card__role">Treasurer</p>
+          </div>
+          <div class="board-card reveal">
+            <div class="board-card__avatar" aria-hidden="true">AM</div>
+            <h3>Alex Mata</h3>
+            <p class="board-card__role">VP of Engagement</p>
+          </div>
+          <div class="board-card reveal">
+            <div class="board-card__avatar" aria-hidden="true">OA</div>
+            <h3>Olivia Anglin</h3>
+            <p class="board-card__role">VP of Education</p>
           </div>
           <div class="board-card reveal">
             <div class="board-card__avatar" aria-hidden="true">CW</div>
             <h3>Charlie Wolff</h3>
-            <p class="board-card__role">Executive Board</p>
+            <p class="board-card__role">Pro Bono Chair</p>
             <a class="board-card__link" href="https://www.linkedin.com/in/charles-wolf-89b150222/" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.766V9.5h3.211v1.562h.046c.447-.85 1.538-1.748 3.166-1.748 3.386 0 4.011 2.23 4.011 5.131v6.007zM5.337 7.433a1.865 1.865 0 01-1.862-1.863 1.865 1.865 0 011.862-1.862 1.865 1.865 0 011.862 1.862 1.865 1.865 0 01-1.862 1.863zm1.604 13.019H3.733V9.5h3.208v10.952zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               LinkedIn
             </a>
           </div>
           <div class="board-card reveal">
-            <div class="board-card__avatar" aria-hidden="true">OA</div>
-            <h3>Olivia Anglin</h3>
-            <p class="board-card__role">Executive Board</p>
-          </div>
-          <div class="board-card reveal">
             <div class="board-card__avatar" aria-hidden="true">RH</div>
             <h3>Ryan Hall</h3>
-            <p class="board-card__role">Executive Board</p>
+            <p class="board-card__role">VP of Marketing</p>
           </div>
           <div class="board-card reveal">
             <div class="board-card__avatar" aria-hidden="true">SB</div>
             <h3>Sarah Burke</h3>
-            <p class="board-card__role">Executive Board</p>
+            <p class="board-card__role">Secretary</p>
           </div>
         </div>
       </div>
@@ -467,7 +590,7 @@
       <div class="container">
         <div class="reveal" style="text-align: center;">
           <div class="kicker" style="justify-content: center;">
-            <span class="kicker__no">06</span>
+            <span class="kicker__no">07</span>
             <span class="kicker__rule"></span>
             <span class="kicker__label">Join us</span>
           </div>
@@ -483,15 +606,16 @@
             <h3>Ready to break into consulting?</h3>
             <p>
               We&rsquo;re open to all Wake Forest students, regardless of major or class
-              year. Come meet us at the fall club fair on Manchester Plaza, or reach out
-              directly to get added to our GroupMe and stay in the loop on upcoming events.
+              year. Drop in to any general meeting (Tuesdays at 5:00 PM in Farrell Hall
+              A27), or reach out directly to get added to our GroupMe and stay in the loop
+              on upcoming events.
             </p>
             <div class="join-card__links">
-              <a href="mailto:wakeforestmcc@gmail.com">
+              <a href="mailto:wakeforestdcc@gmail.com">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                wakeforestmcc@gmail.com
+                wakeforestdcc@gmail.com
               </a>
-              <a href="https://www.instagram.com/wfumcc/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/wfudcc/" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 Follow DCC on Instagram
               </a>
@@ -500,7 +624,7 @@
                 Browse the case library
               </a>
             </div>
-            <a href="mailto:wakeforestmcc@gmail.com?subject=Joining%20the%20Deacon%20Consulting%20Club" class="btn btn--ink">Email us to join
+            <a href="mailto:wakeforestdcc@gmail.com?subject=Joining%20the%20Deacon%20Consulting%20Club" class="btn btn--ink">Email us to join
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
           </div>
@@ -513,20 +637,20 @@
               makes a lasting difference.
             </p>
             <div class="join-card__links">
-              <a href="mailto:wakeforestmcc@gmail.com?subject=Speaking%20at%20a%20DCC%20info%20session%20or%20panel">
+              <a href="mailto:wakeforestdcc@gmail.com?subject=Speaking%20at%20a%20DCC%20info%20session%20or%20panel">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
                 Speak at an info session or panel
               </a>
-              <a href="mailto:wakeforestmcc@gmail.com?subject=Leading%20a%20DCC%20mock%20case%20interview">
+              <a href="mailto:wakeforestdcc@gmail.com?subject=Leading%20a%20DCC%20mock%20case%20interview">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
                 Lead a mock case interview
               </a>
-              <a href="mailto:wakeforestmcc@gmail.com?subject=Mentoring%20a%20DCC%20member">
+              <a href="mailto:wakeforestdcc@gmail.com?subject=Mentoring%20a%20DCC%20member">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
                 Mentor a current Deac
               </a>
             </div>
-            <a href="mailto:wakeforestmcc@gmail.com?subject=DCC%20alumni%20involvement" class="btn btn--gold-line">Get in touch
+            <a href="mailto:wakeforestdcc@gmail.com?subject=DCC%20alumni%20involvement" class="btn btn--gold-line">Get in touch
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
           </div>
@@ -539,7 +663,7 @@
       <div class="container">
         <div class="cta-band__inner">
           <h2>No experience required. Just bring the curiosity.</h2>
-          <a href="mailto:wakeforestmcc@gmail.com?subject=Joining%20the%20Deacon%20Consulting%20Club" class="btn btn--ink">Join the Deacon Consulting Club
+          <a href="mailto:wakeforestdcc@gmail.com?subject=Joining%20the%20Deacon%20Consulting%20Club" class="btn btn--ink">Join the Deacon Consulting Club
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
@@ -566,10 +690,10 @@
             professional connections.
           </p>
           <div class="footer__socials">
-            <a class="footer__social" href="https://www.instagram.com/wfumcc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a class="footer__social" href="https://www.instagram.com/wfudcc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
-            <a class="footer__social" href="mailto:wakeforestmcc@gmail.com" aria-label="Email">
+            <a class="footer__social" href="mailto:wakeforestdcc@gmail.com" aria-label="Email">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </a>
             <a class="footer__social" href="https://drive.google.com/drive/folders/1q9VJMApmxaVNnsFuPd0IaL99cgaR_UpA?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Case library on Google Drive">
@@ -582,6 +706,7 @@
           <ul class="footer__links">
             <li><a href="#about">About</a></li>
             <li><a href="#programs">Programs</a></li>
+            <li><a href="#analysts">Analyst Program</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#board">Board</a></li>
             <li><a href="resources.html">Resources</a></li>
@@ -591,8 +716,8 @@
         <div>
           <p class="footer__heading">Contact &amp; resources</p>
           <ul class="footer__links">
-            <li><a href="mailto:wakeforestmcc@gmail.com">wakeforestmcc@gmail.com</a></li>
-            <li><a href="https://www.instagram.com/wfumcc/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="mailto:wakeforestdcc@gmail.com">wakeforestdcc@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/wfudcc/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a href="https://drive.google.com/drive/folders/1q9VJMApmxaVNnsFuPd0IaL99cgaR_UpA?usp=drive_link" target="_blank" rel="noopener noreferrer">Case library (Google Drive)</a></li>
             <li><a href="resources.html">Case-prep resources</a></li>
           </ul>
