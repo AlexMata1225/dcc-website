@@ -344,6 +344,7 @@ a.hero__announce:hover { background: rgba(166, 148, 7, 0.14); color: var(--ink);
 }
 .hero__plate-caption span,
 .hero__plate-caption strong { white-space: nowrap; }
+.nowrap { white-space: nowrap; }
 .hero__plate-caption strong { color: var(--gold-text); font-weight: 700; }
 .hero__scroll {
   position: absolute;
@@ -1088,7 +1089,10 @@ a.hero__announce:hover { background: rgba(166, 148, 7, 0.14); color: var(--ink);
   .hero__plate-caption { font-size: 0.6rem; letter-spacing: 0.14em; justify-content: center; }
   .pillars { grid-template-columns: 1fr; }
   .programs__grid { grid-template-columns: 1fr; }
-  .board-card { width: 100%; max-width: 340px; }
+  .board__grid { gap: 0.9rem; }
+  .board-card { width: calc(50% - 0.45rem); padding: 1.7rem 0.5rem 1.3rem; }
+  .board-card__avatar { width: 64px; height: 64px; font-size: 1.2rem; margin-bottom: 1rem; }
+  .board-card__role { font-size: 0.64rem; letter-spacing: 0.08em; }
   .timeline__row { grid-template-columns: 48px 1fr; gap: 1.1rem; }
   .join-card, .analyst-card { padding: 2.2rem 1.7rem; }
   .work-card { padding: 2.1rem 1.7rem; }
