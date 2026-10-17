@@ -16,7 +16,7 @@ Run with Python 3.12 or newer after editing content, CSS, or JavaScript:
 python3 build.py --production
 ```
 
-Production builds include canonical URLs and allow search indexing. Omitting `--production` creates a non-indexable local review build, which must not be committed for production. The build updates content hashes for CSS and JavaScript. It regenerates all seven HTML pages plus `events.js` and `events.json`.
+Production builds include canonical URLs and allow search indexing. Omitting `--production` creates a non-indexable local review build, which must not be committed for production. The build updates content hashes for CSS and JavaScript. It regenerates the seven main pages, a branded `404.html`, and `events.js` and `events.json`. The 404 page uses root-relative navigation so it works for missing paths at any depth. Production pages include Open Graph and Twitter sharing metadata plus the existing favicon and Apple touch icon.
 
 For local review:
 
@@ -40,7 +40,7 @@ The two club photographs were supplied by the club. The Wait Chapel image and DC
 - [Founders Living Room — Wake Forest Parents & Families](https://parents.wfu.edu/2017/02/panoramic-view-of-farrell-hall-living-room/)
 - [Farrell Hall exterior — Wake School of Business](https://business.wfu.edu/campus-winston-salem/farrell-hall/)
 
-The Farrell interior photograph is from 2017 and depicts campus life, not the current DCC cohort. Campus-image public reuse permission has not been independently documented. Open Sans is distributed under the included SIL Open Font License. No headshots, testimonials, client names, or outcomes were generated.
+The Farrell interior photograph is from 2017 and depicts campus life, not the current DCC cohort. On October 16, 2026, the club representative confirmed that DCC has permission to use the added campus images. The representative also confirmed that the listed board and fall 2026 calendar are current. Open Sans is distributed under the included SIL Open Font License. No headshots, testimonials, client names, or outcomes were generated.
 
 ## Verification
 
@@ -49,3 +49,7 @@ All seven page layouts were reviewed at desktop and phone widths; the five pages
 ## Contact
 
 wakeforestdcc@gmail.com · [@wfudcc](https://www.instagram.com/wfudcc/)
+
+## Live readiness review — October 16, 2026
+
+All seven public pages were inspected at 1440px desktop and 390px phone widths with no horizontal overflow, missing image descriptions, or empty link labels. Mobile navigation, Escape behavior, FAQ expansion, resource search/filter/no-results/reset, and the downloaded four-event Eastern-time calendar passed. HTTP and www addresses redirect to canonical HTTPS. Public resource destinations were checked: the club Drive library requires Google sign-in; Forbes and LinkedIn restrict automated checks, so those destinations are not claimed as fully verified. Small mobile-heading spacing issues were corrected. Shared-link metadata, app/browser icons, and a branded missing-page experience were added. The board, meeting schedule, and campus-photo permission were confirmed by the club representative.
