@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://wfudcc.org/</loc></url>
+  <url><loc>https://wfudcc.org/work.html</loc></url>
+  <url><loc>https://wfudcc.org/analysts.html</loc></url>
+  <url><loc>https://wfudcc.org/club.html</loc></url>
+  <url><loc>https://wfudcc.org/people.html</loc></url>
+  <url><loc>https://wfudcc.org/partner.html</loc></url>
   <url><loc>https://wfudcc.org/resources.html</loc></url>
 </urlset>

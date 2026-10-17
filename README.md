@@ -1,62 +1,51 @@
-# Deacon Consulting Club — Website
+# Deacon Consulting Club website
 
-The official website of the **Deacon Consulting Club** (formerly the Wake Forest
-Management Consulting Club) at Wake Forest University.
-
-**Live site:** https://wfudcc.org (also reachable at https://alexmata1225.github.io/dcc-website/,
-which redirects there once the custom domain is set)
+Official website of Deacon Consulting Club at Wake Forest University: **https://wfudcc.org/**.
 
 ## Pages
 
-- `index.html` — Home: hero, club stats, about, our work, programs, Analyst Program,
-  semester schedule, executive board, and how to get involved
-- `resources.html` — Case-prep library: recommended platforms, industry primers,
-  networking guides, and interview prep
+Home, Our work, Analyst Program, The club and calendar, Our people, Partner with DCC, and Resources.
 
-## Tech
+## Editing and building
 
-Plain HTML/CSS with a small vanilla JS file — no frameworks, no build step.
+The site is static HTML, CSS, and vanilla JavaScript with no npm dependencies. `build.py` contains the page content, board, event calendar, and resource list. `site.css` and `campus.css` contain the design; `site.js` contains menu, calendar, legacy-link routing, and resource-search behavior. Assets and fonts are served locally.
 
-- `assets/styles.css` — shared design system (Wake Forest gold + black, editorial style)
-- `assets/site.js` — mobile nav, scroll reveals, footer year, next-meeting banner
-- `assets/` — DCC logo files, WFU logo, favicons
+Run with Python 3.12 or newer after editing content, CSS, or JavaScript:
 
-## Editing
+```sh
+python3 build.py --production
+```
 
-- **Update the board:** in `index.html`, find the `board__grid` section — duplicate a
-  `board-card` block and edit the initials, name, role, and LinkedIn link.
-- **Update the schedule:** in `index.html`, edit the `timeline__row` blocks in the
-  `#schedule` section. Each row's `data-date` (YYYY-MM-DD) decides which meeting the hero
-  banner and "Next up" card show, and which rows are greyed out as past. Add
-  `data-where="..."` to a row if that meeting isn't at 5:00 PM in Farrell Hall A27.
-- **Add a page:** copy `resources.html` as a starting point (it has the nav + footer),
-  keep the `assets/styles.css` link, and set `aria-current="page"` on the active nav item.
-- **Preview locally:** run `python3 -m http.server` in this folder and open
-  `http://localhost:8000`.
+Production builds include canonical URLs and allow search indexing. Omitting `--production` creates a non-indexable local review build, which must not be committed for production. The build updates content hashes for CSS and JavaScript. It regenerates all seven HTML pages plus `events.js` and `events.json`.
 
-## Domain
+For local review:
 
-`wfudcc.org` points at GitHub Pages. The site deploys through the Actions workflow in
-`.github/workflows/pages.yml`, so the custom domain is set in the repo's
-**Settings → Pages**, not with a `CNAME` file (Actions deploys ignore that file).
-DNS records at the registrar:
+```sh
+python3 -m http.server 4317 --bind 127.0.0.1
+```
 
-| Type  | Name  | Value |
-|-------|-------|-------|
-| A     | `@`   | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
-| AAAA  | `@`   | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
-| CNAME | `www` | `alexmata1225.github.io` |
+## Publishing and domain
 
-If the repo moves to another account or org, update the `www` CNAME to that owner's
-`<name>.github.io` and re-enter the custom domain in the new repo's Pages settings.
+Push reviewed production files to `main`. The existing workflow in `.github/workflows/pages.yml` deploys the repository through GitHub Pages. The custom domain `wfudcc.org` is configured in Settings → Pages. DNS and HTTPS settings are unchanged by the redesign. No Cloudflare deployment is required.
 
-## History
+The previous site is preserved in Git history at commit `5645bc9259e24347ba855bc46c6808e727d48509`. Use a normal revert of the redesign commit if rollback is needed; do not rewrite branch history. Older asset paths are retained for visitors with cached HTML. Old homepage anchors route to their corresponding new pages.
 
-The old Management Consulting Club site was published under `/mcc` for side-by-side
-review during the rebrand. It was retired from the live site in October 2026 and is
-preserved in git at the tag `mcc-site-archive` (`git checkout mcc-site-archive -- mcc`
-restores it).
+## Content and photography
+
+The fall 2026 Analyst Program has 14 participants, confirmed by the club. Program, board, calendar, and contact content came from the previous public website. Keep semester and application status current in `build.py`. Meetings are interpreted in America/New_York time; calendar downloads contain upcoming event starts and do not invent end times.
+
+The two club photographs were supplied by the club. The Wait Chapel image and DCC monogram are retained from the previous website. Additional campus photographs are credited on their pages:
+
+- [Hearn Plaza in autumn — Wake Admissions](https://admissions.wfu.edu/visit/tour/)
+- [Founders Living Room — Wake Forest Parents & Families](https://parents.wfu.edu/2017/02/panoramic-view-of-farrell-hall-living-room/)
+- [Farrell Hall exterior — Wake School of Business](https://business.wfu.edu/campus-winston-salem/farrell-hall/)
+
+The Farrell interior photograph is from 2017 and depicts campus life, not the current DCC cohort. Campus-image public reuse permission has not been independently documented. Open Sans is distributed under the included SIL Open Font License. No headshots, testimonials, client names, or outcomes were generated.
+
+## Verification
+
+All seven page layouts were reviewed at desktop and phone widths; the five pages with new campus photography were also checked at tablet width. Navigation, FAQs, resource search/filter/reset, and the calendar download were exercised. Local links and assets were validated. Search metadata and old homepage anchors were checked for the production release.
 
 ## Contact
 
-wakeforestdcc@gmail.com · Instagram [@wfudcc](https://www.instagram.com/wfudcc/)
+wakeforestdcc@gmail.com · [@wfudcc](https://www.instagram.com/wfudcc/)
