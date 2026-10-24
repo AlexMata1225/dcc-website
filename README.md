@@ -34,7 +34,9 @@ The previous site is preserved in Git history at commit `5645bc9259e24347ba855bc
 
 The fall 2026 Analyst Program has 14 participants, confirmed by the club. Program, board, calendar, and contact content came from the previous public website. Keep semester and application status current in `build.py`. Meetings are interpreted in America/New_York time; calendar downloads contain upcoming event starts and do not invent end times.
 
-The two club photographs were supplied by the club. The Wait Chapel image and DCC monogram are retained from the previous website. Additional campus photographs are credited on their pages:
+Club photographs were supplied by the club. The October 2026 update adds four classroom selections across Home, The club, Our people, and Resources, plus four EY Charlotte office-trek selections on The club page. The two presentation photographs use the approved projector-screen replacements; the other classroom exports are cropped to exclude the projector. Responsive WebP exports omit source metadata. Original files and private photo-review materials are kept outside this public repository.
+
+The Wait Chapel image and DCC monogram are retained from the previous website. Additional campus photographs are credited on their pages:
 
 - [Hearn Plaza in autumn — Wake Admissions](https://admissions.wfu.edu/visit/tour/)
 - [Founders Living Room — Wake Forest Parents & Families](https://parents.wfu.edu/2017/02/panoramic-view-of-farrell-hall-living-room/)
